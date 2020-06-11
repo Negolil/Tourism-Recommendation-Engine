@@ -70,6 +70,7 @@ def get_attractions_for_traveler(traveler):
   traveler_interests = traveler[2]
   traveler_attractions = find_attractions(traveler_destination, traveler_interests)
   interests_string = "Hi " + traveler[0] + ", we think you'll like these places around " + traveler_destination + ": " 
+  
   for locales in range(len(traveler_attractions)):
     if traveler_attractions[-1] == traveler_attractions[locales]:
       interests_string += "the " + traveler_attractions[locales] + "."
